@@ -1,9 +1,13 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-image: url(/background.jpg);
+  background-color: rgba(255, 255, 255, 0);
+  background-size: 100%;
+  color: #000000;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 30px;
+  line-height: 45px;
+  margin: 30px;
+  padding-top: 30px;
 }
 
 p, ol, ul, td {
@@ -25,7 +29,8 @@ a {
   }
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: rgba(61, 85, 79, 0.51);
+    border-radius: 5px;
   }
 }
 
@@ -37,6 +42,39 @@ div {
 
 #notice {
   color: green;
+}
+
+.span8{
+  font-family: 'Times New Roman', Times, serif;
+  color: #000746;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 20px;
+  TABLE {
+    width: 300px;
+    border-collapse: collapse;
+  }
+  TD, TH {
+    padding: 3px;
+    border: 1px solid black;
+  }
+  TH {
+    background: rgba(124, 165, 181, 0.58);
+  }
+}
+
+.well.sidebar-nav{
+  font-family: 'Times New Roman', Times, serif;
+  color: #007a98;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  font-style: italic;
+  border-radius: 5px;
+  ul, td {
+    text-decoration-color: #ffffff;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 15px;
+  }
 }
 
 .field_with_errors {

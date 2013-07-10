@@ -22,7 +22,7 @@ development:
   timeout: 5000
   username: admin
   password: system32
-  host: 192.168.0.15
+  host: localhost
   port: 5432
 
 test:
@@ -33,7 +33,7 @@ test:
   timeout: 5000
   username: admin
   password: system32
-  host: 192.168.0.15
+  host: localhost
   port: 5432
 
   # Connect on a TCP socket. Omitted by default since the client uses a

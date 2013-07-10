@@ -1,23 +1,13 @@
-%h1 Listing news
-
-%table
-  %tr
-    %th Date
-    %th Title
-    %th Text
-    %th
-    %th
-    %th
+%h1 Новости
+.page-header
 
   - @news.each do |news|
     %tr
       %td= news.date
       %td= news.title
       %td= news.text
-      %td= link_to 'Show', news
+      %td= link_to 'Подробнее', news
       %td= link_to 'Edit', edit_news_path(news)
       %td= link_to 'Destroy', news, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-%br
-
-= link_to 'New News', new_news_path
+= link_to 'Добавить новость', new_news_path

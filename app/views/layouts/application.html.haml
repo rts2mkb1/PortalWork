@@ -1,0 +1,42 @@
+!!! 5
+%html(lang="ru")
+  %head
+    =favicon_link_tag '/favicon.png', :type => 'image/png'
+    %meta{:charset=>'utf-8'}
+    %title Тех. поддержка
+    =stylesheet_link_tag 'application'
+    =javascript_include_tag 'application'
+    =csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %ul.nav
+            %li=link_to 'На главную', root_path
+            %li
+              -if !logged_in?
+                =link_to "Регистрация"
+          %ul.nav.pull-right
+            -if logged_in?
+              %li
+                %li=link_to current_user.username
+                %li=link_to "Выход"
+            -else
+              %li=link_to "Войти"
+
+    .container-fluid
+      .row-fluid
+        .span3
+          .well.sidebar-nav
+            %h3 Меню
+            %ul.nav.nav-list
+              %li=link_to 'Test 1'
+              %li=link_to 'Test 2'
+              %li=link_to 'Test 3'
+        .span8
+          = bootstrap_flash
+          = yield
+    = javascript_include_tag "application"
+
+%footer
+  %p &copy; МГИУ 2013
