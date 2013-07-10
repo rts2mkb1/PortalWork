@@ -7,8 +7,10 @@ gem 'rails', '4.0.0'
 gem 'pg'
 gem 'haml-rails'
 gem 'sorcery'
+gem 'twitter-bootstrap-rails'
+gem "therubyracer"
+gem "less-rails"
 
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets

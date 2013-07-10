@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Year:
+  = @newspaper.year
+%p
+  %b Number:
+  = @newspaper.number
+%p
+  %b Relese date:
+  = @newspaper.relese_date
+
+= link_to 'Edit', edit_newspaper_path(@newspaper)
+\|
+= link_to 'Back', newspapers_path

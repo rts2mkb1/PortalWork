@@ -1,0 +1,23 @@
+%h1 Listing newspapers
+
+%table
+  %tr
+    %th Year
+    %th Number
+    %th Relese date
+    %th
+    %th
+    %th
+
+  - @newspapers.each do |newspaper|
+    %tr
+      %td= newspaper.year
+      %td= newspaper.number
+      %td= newspaper.relese_date
+      %td= link_to 'Show', newspaper
+      %td= link_to 'Edit', edit_newspaper_path(newspaper)
+      %td= link_to 'Destroy', newspaper, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Newspaper', new_newspaper_path
