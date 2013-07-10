@@ -25,7 +25,7 @@ class NewsController < ApplicationController
   # POST /news.json
   def create
     @news = News.new(news_params)
-
+    @news.date=Time.now
     respond_to do |format|
       if @news.save
         format.html { redirect_to @news, notice: 'News was successfully created.' }
