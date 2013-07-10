@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Number:
+  = @enterprise.number
+%p
+  %b Name:
+  = @enterprise.name
+%p
+  %b Priority:
+  = @enterprise.priority
+
+= link_to 'Edit', edit_enterprise_path(@enterprise)
+\|
+= link_to 'Back', enterprises_path
