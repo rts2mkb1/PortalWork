@@ -25,16 +25,6 @@ class AreasController < ApplicationController
   # POST /areas.json
   def create
     @area = Area.new(area_params)
-
-    respond_to do |format|
-      if @area.save
-        format.html { redirect_to @area, notice: 'Area was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @area }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @area.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PATCH/PUT /areas/1
