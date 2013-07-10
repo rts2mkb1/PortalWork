@@ -1,0 +1,27 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+      %a.brand(href="#") Portal
+      .container.nav-collapse
+        %ul.nav.pull-right
+
+
+          %li.test.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            Роль
+            %b.caret
+          %ul.test1.dropdown-menu
+
+            %li=link_to "Администратор"
+
+            %li=link_to "Модератор"
+
+            %li=link_to "Сотрудник отдела"
+
+
+          %li=link_to "Профиль",:style=>"color:#fff;"
+
+
+          %li=link_to "Выход" ,:style=>"color:#fff;"
+
+          %li=link_to "Вход" ,:style=>"color:#fff;"

@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 %h1 Добавление новости
 
 = render 'form'
 
 = link_to 'К списку новостей', news_index_path
+=======
+- model_class = News
+.page-header
+  %h1=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize
+= render :partial => "form"
+>>>>>>> Stashed changes
